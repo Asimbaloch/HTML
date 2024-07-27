@@ -3,55 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Form</title>
 </head>
 <body>
-    <form action="" method="">
-        <label for="username">Username</label>
-        <input type="text" placeholder="username" maxlength="9" minlength="5">
+    <form action="index.php" method="post">
 
-        <label for="password">Password</label>
-        <input type="password" id="pass" required minlength="3" maxlength="7" >
 
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <label for="username">Username:</label>
+        <input type="text" placeholder="username" id="username" minlength="6" maxlength="9">
 
-        <label for="phone"></label>
-        <input type="tel" id="number" placeholder="cell number" pattern="[4]-[7]" >
-        
-        <hr>
+        <label for="password">Password:</label>
+        <input type="password" maxlength="10" placeholder="password" id="password">
 
-        <label for="birthdate"></label>
-        <input type="date"; name="" id="birthdate">
+        <label for="email">email:</label>
+        <input type="email" placeholder="asimseom@gmail.com" id="email">
+
+        <label for="phone">Phone </label>
+        <input type="tel" id="phone" placeholder="123-456-1111">
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday">
 
         <label for="quantity">quantity</label>
-        <input type="number" id="" min="0" max="90">
+        <input type="number" id="quantity" min="0" max="3">
 
+
+
+        <label for="title">title :</label>
+
+        
+        <input type="radio" id="Mr." name="title">
         <label for="Mr.">Mr.</label>
-        <input type="radio" name="title" id="">
 
-        <label for="Mrs">Mrs</label>
-        <input type="radio" name="title" id="">
+        
+        <input type="radio" id="Mrs." name="title">
+        <label for="Mrs.">Mrs.</label>
 
-        <label for="Phd">phd</label>
-        <input type="radio" name="title" id="">
+        <input type="radio" id="PHD." name="title">
+        <label for="PHD.">PHD</label>
+        
 
         <label for="payment">Payment</label>
-        <select name="payment" id="">
 
+        <select name="Payment" id="">
             <option value="Visa">Visa</option>
-            <option value="MasterCard">MasterCard</option>
-            <option value="PayPak">Paypak</option>
+            <option value="MasterCard">Mastercard</option>
         </select>
 
-        <label for="comment">comment</label>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-        <label for="input">file</label>
-        <input type="file" name="" id=""  accept="png">
-        <input type="submit">
-        <input type="reset">
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
 
     </form>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
